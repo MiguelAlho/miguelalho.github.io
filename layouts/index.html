@@ -1,9 +1,11 @@
+{{ define "hero" }}
+<section class="hero is-primary"> a hero </section>
+{{ end }}
+
 {{ define "main" }}
-  <h1>Posts</h1>
-  {{ range .Pages }}
+  <h1>Index</h1>
     <article>
       <h2>{{ .Title }}</h2>
       {{ .Content }}
     </article>
-  {{ end }}
 {{ end }}
