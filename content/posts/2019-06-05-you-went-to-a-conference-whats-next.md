@@ -1,0 +1,30 @@
+---
+title: You went to a conference… what’s next?
+author: Miguel Alho
+type: post
+date: 2019-06-05T14:57:22+00:00
+url: /you-went-to-a-conference-whats-next/
+categories:
+  - Uncategorized
+
+---
+Conferences are naturally a great place to get some new info and insights into techniques and solutions to problems. They also serve to validate and critique our understandings and assumptions on how we work and the choices we are making in that context. But the learning and inspiration that goes on at the event needs to be put into practice also, after the event. But how?
+
+I helped organize the first <a rel="noreferrer noopener" aria-label="DevOpsDays Portugal (opens in a new tab)" href="https://devopsdays.org/events/2019-portugal/welcome/" target="_blank">DevOpsDays Portugal</a> that was run at the beginning of this week. During and after the event there were plenty of discussions going on, related to the topics presented, specific techniques and ideas, and naturally the sharing that went on in the open spaces.
+
+This is obviously great, but it should not end when the event is over. One thing I think is very important is that you find ways to bring back what you have learned into the workplace so that the knowledge gained scales and the environment around you can adapt to your new and useful ideas.
+
+So I&#8217;ve come up with a short list of ideas you can use, especially if you had gone to DevOpsDays Portugal specifically, though most of these will apply to any conference you go to.
+
+  * **Write a blog post on what you have learned** &#8211; Write out your thoughts and ideas, things locked in your mind from the event. What did you find useful? What do you disagree with and why (because you can choose to agree and disagree)? What suprised you? What do you think you can apply to what you are working on? Getting this written down is a great way to scale the sharing aspect of what your thoughts are. If you have many ideas, consider creating many small posts to aid sharing and discussion. 
+  * **Create a search list** &#8211; Acronyms you saw or heard of, pattern names, technique names, component type names and so called &#8220;buzzwords&#8221; can be useful for this. Which ones do you know and don&#8217;t know about? The ones you know about can be explored further for deeper knowledge; the ones you don&#8217;t know can be searched for new insights. This is a great way to broaden knowledge in areas you are not generally aware of. Just don&#8217;t stick with not knowing about something.
+  * **Summarize and present internally** &#8211; Create a short presentation (something like 10-15 minutes) sharing the topics you found interesting and how you think they could be explored at your workplace or your team. Share the vocabulary you found if that will help people search for more, deeper info on what the ideas are, and promote the learning around you.
+  * **Use the presentations for lunch and learns** &#8211; videos from the event are not out yet, but you could start to think about which talks would make sense and bring more value to your current team. Once available set up a session with pizza or just normal lunch to (re)watch as a team and discuss afterwards.
+  * **Run an open space internally** &#8211; now that you have experienced the open space, you can run one internally with your team, and focus on issues and ideas you learned about at the conf or just general issues your team would like to bring to the table. You probably won&#8217;t need to have as many slots, since your team will probably (and hopefully) be smaller then the attendance at the conference. make this a part of your Kaizen initiatives.
+  * **Compare where you are with what was presented** &#8211; run some mapping sessions and round tables that would allow you to see what is your current situation is and compare it to some that where presented. Are you blameless and getting value from your postmortems? What&#8217;s your on-call like compared to what was presented? How about your build pipelines and architectures? Is zero-downtime a thing you could reach as did the presenter? Hows your testing strategy and how right or left is it in the pipeline? What about team organization? There&#8217;s alot you can (critically) compare, and help map out what are your capabilities at the moment, and which ones you could improve on.
+  * **Use the ideas for a hackathon **&#8211; was something mentioned and built that could also help your org? Could a hackathon help spread the idea and get it implemented / tested in your org? Is there a library of tool your team should test out in a proof of concept to see if it would improve your situation?
+  * **Share sponsor materials to spark discussions **&#8211; You may have collected a bunch of panflets and saw some of our sponsor tools. Dont&#8217; throuw them away. Share them, not necessarily for purchasing (since many of us don&#8217;t actually have that control), but at least to check out whats available and what aspects solve issues you have and map to what you learn. When colleagues are checking them out, try to mention some of the ideas and definitions you learned about and how they could help your org. Discuss how to bring those solutions into your work, whether through the tool from that vendor or other means. Also, how do their solutions differ from or improve on what you have at the moment?
+
+All in all, what I personally think is important is that the event serves as a spark in the learning process and improvement of your work experience and work outcomes. After the event is the time to start to do something to continue improving and continue the learning journey with the many new ideas you have captured.
+
+This is obviously a short list, and there is so much more that can be done. What are your ideas to keep the learning going?
