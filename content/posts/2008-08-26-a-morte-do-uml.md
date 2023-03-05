@@ -1,0 +1,30 @@
+---
+title: A morte do UML…?
+author: Miguel Alho
+type: post
+date: 2008-08-26T20:21:10+00:00
+url: /a-morte-do-uml/
+categories:
+  - 'Code &amp; IT'
+tags:
+  - ferramentas
+  - UML
+
+---
+O título pode ser, vá, &#8220;controverso&#8221;, mas vêm no seguimento da leitura de dois artigos que encontrei hoje, e por acaso sobre uma matéria sobre a qual ponderei hoje. O primeiro é o &#8220;<a href="http://littletutorials.com/2008/05/15/13-reasons-for-umls-descent-into-darkness/" target="_blank"><em>13 reasons for UML&#8217;s descent into darkness</em></a>&#8221; e o &#8220;<a href="http://blog.fragmental.com.br/2008/07/25/uh-eme-ele/" target="_blank">Uh-Éme-Éle</a>&#8221; do blog <a href="http://blog.fragmental.com.br/" target="_blank">Fragmental</a>, que descobri hoje e considero muito bem escrito e interessante. Ambos apresentam argumentos muito válidos. E eu nunca imaginei que tanto pessoal (basta ler os comentários) sentisse a inutilizade do UML.
+
+A ideia de criar o gerador de código tem levado a pensar um pouco sobre as ferramentas em uso. Eu uso o <a href="http://www.microsoft.com/express/" target="_blank">Visual Studio Express Editions</a>, para programar, mas tenho muita vontade de passar para a versão profissional. Vejo nas opções extras oferecidas pelo IDE vantagens e validade para efectuar o investimento, em especial a integração de ferramentas externas, o gerador de classes, e a integração de tipos de projectos diferentes na mesma solução, que o Express não permite. Outra ferramenta que pondero é o <a href="http://www.sparxsystems.com.au/" target="_blank">Sparx EA</a>, uma ferramenta de analise e modelação. Este, em particular, é uma ferramenta que utilizei num projecto e serviu para modelar um sistema bastante complexo. Gostei muito da aplicação e facilidades de documentação e geração de código oferecidos. A aplicação até nem é muito cara e com uma componente extra (que custa tanto como a aplicação) a integração no Visual Studio é completo. A pergunta principal é.. justifica-se?
+
+<!--more-->
+
+A resposta não é nada simples, diga-se. Gostei de utilizar o Sparx, e na altura gabei a aplicação. É realmente bastante funcional, e óptimo para modelar o sistema e aplicação. E tem gerador de código, o que poupou muito esforço no início. Aliás, foram 2 meses a &#8220;modelar&#8221; &#8211; entenda-se a definir objectos e classes e casos de uso e blocos&#8230; sem escrever uma linha de código. Tempo perdido? Não de todo. Na verdade durante o processo, muitas questões foram levantadas e muito potenciais problemas, em termos de processos e estruturas de dados foram encontrados. Facilitou o planeamento e gerou o documento caderno de encargos, completo e documentado a partir dos diagramas.
+
+Não é um mar de rosas, de todo. O código gerado é &#8220;básico&#8221; &#8211; declarações de classes e métodos sem qualquer código que o implementa &#8211; portanto há bastante código gerado mas muito mais para escrever. Depois, e como mencionado nos artigos, o UML não garante nada &#8211; podes modelar um sistema completo, mas na prática pode não funcionar ou ser simplesmente impossível de implementar, devido a limitações de linguagens e afins e que não podem ser verificadas. Ele não permite a prototipagem. No meu caso, muito do que foi definido inicialmente e que foi considerado válido teve que ser mudado por detalhes técnicos dos processos que escaparam à modelagem e por questões de performance, ou mesmo incapacidade de o programa manipular um tipo de dados (como os anuláveis). Felizmente o sistema de engenharia inversa do código é óptimo, e consegue-se diagramas geralmente válidos após a criação do código.
+
+Em sistemas que desenvolvi num género de &#8220;model as you code&#8221;, a verdade é que o desenvolvimento pareceu ser mais rápido e mais eficiente. Os problemas que encontrei sem a modelagem provavelmente seriam os mesmos com a modelagem, e de forma alguma arrisquei o sucesso da aplicação. Naturalmente há sempre uma modelagem, mesmo que num sentido geral, e mesmo que em papel (que gosto de utilizar) com pouco detalhe, mas que ao mesmo tempo permite prototipar a aplicação e verificar a validade. É como a frase do post anterior: é modelar com os tijolos.
+
+Outra razão para ponderar a validade do investimento em UML é o próprio gerador de código com o framework em que pondero apostar. A modelagem acaba por ser efectuado no gerador de código (mesmo que com uma apresentação diferente), o que permite correcta integração e modificação do código (quando há mudanças no modelo). Grande parte dos código interno é já mais ou menos conhecido, que posso introduzir em bibliotecas. Dada a introdução dos metadados, posso com algum esforço gerar a documentação.
+
+Mais, e foi algo que encontrei ser praticamente consensual, é que o modelo mais usado e mais importante acaba por ser o modelo de classes. Em muitos casos, os restantes são praticamente dispensáveis. Eu pessoal considero os Use Cases muito úteis, especialmente para verificar que, no fim de tudo, as operações desejadas estão implementadas. Mas novamente é um ponto que sofre modificações ao logo da implementação da solução. Os restantes tipos de diagramas continuem úteis, mas novamente não levam a lado nenhum em termos de geração de código.
+
+Por fim, há que não esquecer as alternativas. Há uma lista bastante vasta de ferramentas de UML gratuitas no mercado. E se bem que um produto como o Visual Studio, pela facilidade e eficiência que oferece, justifica o preço, No caso do UML, pela raridade de uso, pode já não justificar. As alternativas mais baratas, e abertas, podem ser realmente úteis e suficientes. Olha só a <a href="http://en.wikipedia.org/wiki/List_of_UML_tools" target="_blank">lista de ferramentas de UML no wikipedia</a>. Agora pensando bem, se conseguisse integrar o meu gerador de código numa ferramenta destas.. ui ui!!! 😀

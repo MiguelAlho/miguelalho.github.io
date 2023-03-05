@@ -1,3 +1,7 @@
 .hero {
     height: 200px;
 }
+
+.navbar {
+    border-bottom: solid 1px grey;
+}

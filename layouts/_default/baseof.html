@@ -6,7 +6,7 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="/custom.css">
   </head>
   <body>
     {{ block "header" . }}{{ partial "header.html" .}}{{ end }}
@@ -15,7 +15,7 @@
         <!-- The part of the page that begins to differ between templates -->
         {{ end }}
 
-        <div class="container">        
+        <div class="container content">        
         <!-- Code that all your templates share, like a header -->
         {{ block "main" . }}
         <!-- The part of the page that begins to differ between templates -->
