@@ -4,12 +4,6 @@ author: Miguel Alho
 type: post
 date: 2015-06-05T09:40:29+00:00
 url: /upgrading-vnext-mvc6-apps-from-beta4-to-beta5/
-categories:
-  - 'Code &amp; IT'
-tags:
-  - ASP.Net vNext
-  - MVC6
-
 ---
 It&#8217;s been a while, but my last few sprints have been focused on working with ASP.NET 5 MVC6, namely evaluating what is going on in order to protoype an app front-end. Working with Beta versions is definitely challenging &#8211; there are plenty of moving parts and a lack of documentation. Fortunately, the term &#8220;community&#8221; is one we can apply more to what is going on with Microsoft&#8217;s iniciative. I&#8217;ve been pretty much googling stuff, deducing concepts, and hogging the [Jabber #AspNetvNext][1] chat room, where, fortunately, I&#8217;m getting answers I need.
 

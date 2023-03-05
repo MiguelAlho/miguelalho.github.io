@@ -4,9 +4,6 @@ author: Miguel Alho
 type: post
 date: 2015-07-16T23:34:11+00:00
 url: /build-vnext-projects-in-tfs-on-premise/
-categories:
-  - 'Code &amp; IT'
-
 ---
 Since I&#8217;ve been working with vNExt these last few weeks at Celfinet, and having started a brand new solution for some services, one of my main concerns was to get a build setup ASAP. The lesser the amount of dependencies and projects and what not, the easier and faster it is to setup the build. Faster here is mainly for code sync (from source control, in this case, GIT) and the build feedback. The less amount of work that needs to be done, the faster it will be to se the whole job pass or fail, which in the setup phase can be daunting if you have to wait long.
 

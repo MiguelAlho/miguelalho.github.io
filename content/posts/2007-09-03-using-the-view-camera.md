@@ -5,7 +5,7 @@ type: post
 date: 2007-09-03T15:58:00+00:00
 url: /using-the-view-camera/
 categories:
-  - Photography
+  - photography
 tags:
   - equipamentos
   - grande formato

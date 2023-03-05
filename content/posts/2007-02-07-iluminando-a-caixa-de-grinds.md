@@ -5,7 +5,7 @@ type: post
 date: 2007-02-07T10:03:00+00:00
 url: /iluminando-a-caixa-de-grinds/
 categories:
-  - Photography
+  - photography
   - Random Stuff
 tags:
   - iluminação

@@ -4,9 +4,6 @@ author: Miguel Alho
 type: post
 date: 2014-10-05T10:44:49+00:00
 url: /visual-studio-solution-and-package-versioning-part-1/
-categories:
-  - Uncategorized
-
 ---
 Previously, I wrote in my previous post &#8220;<a href="http://www.miguelalho.pt/semver-team-development-and-visual-studio-solutions/" target="_blank">SemVer, Team Development and Visual Studio Solutions</a>&#8221; some of my thoughts about solution and application versioning. It&#8217;s been nearly two months since I wrote it, and after having followed the strategy I outlined, I can now discuss my experience with it. My team and I have felt some of the pains associated to it. Just like when I wrote it I was looking for a solution to my problem at the time, I continue to search for fixes to other problems that have arisen.
 

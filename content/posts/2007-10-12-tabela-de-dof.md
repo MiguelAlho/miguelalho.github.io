@@ -5,7 +5,7 @@ type: post
 date: 2007-10-12T08:56:00+00:00
 url: /tabela-de-dof/
 categories:
-  - Photography
+  - photography
 tags:
   - Depth of field
   - DOF

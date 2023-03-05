@@ -4,9 +4,6 @@ author: Miguel Alho
 type: post
 date: 2019-01-10T17:32:55+00:00
 url: /my-favorite-podcasts-from-2018/
-categories:
-  - 'Code &amp; IT'
-
 ---
 Podcasts are an important part of my personal learning strategy. It&#8217;s a large slice of the content I consume in my day-to-day learning activities. They are excellent sources of information that are easy to absorve in the right scenarios. For me, those have been my comute to work while driving and walking.
 

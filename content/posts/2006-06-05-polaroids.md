@@ -5,9 +5,9 @@ type: post
 date: 2006-06-05T13:15:00+00:00
 url: /polaroids/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 <img src="http://static.flickr.com/50/160852455_7e3a771a20_o.jpg" width="450" height="550" alt="NunoRel%F3gio-fssalad_450" />  

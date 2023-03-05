@@ -4,15 +4,6 @@ author: Miguel Alho
 type: post
 date: 2014-07-22T13:25:11+00:00
 url: /wiring-up-an-event-message-handling-service/
-categories:
-  - 'Code &amp; IT'
-tags:
-  - .net
-  - 'C#'
-  - castle windsor
-  - cqrs
-  - event handlers
-
 ---
 Recently, in a project I&#8217;m working on, I needed to create a service that would allow me to monitor what was going on in the application. In this case, log file info wasn&#8217;t rich enough for the type of analysis required. We wanted a contextualized view of what was going on at any moment within this application, but also to measure key aspects of its use. In a sense, it would be an implementation of some of the control patterns referred to in [Architecting Enterprise Solutions: Patterns for High-capability Internet-based Systems (Wiley Software Patterns Series)][1]<img style="border: none !important; margin: 0px !important;" src="http://ir-uk.amazon-adsystem.com/e/ir?t=mytymykysphot-21&l=as2&o=2&a=0470856122" alt="" width="1" height="1" border="0" />  
 , such as the System Monitor.

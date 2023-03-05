@@ -7,3 +7,20 @@
     font-size: 30px;
     color:#0000b5;
 }
+
+.content ul.listing {
+    list-style: none;
+    margin:0;
+}
+li { 
+    margin-bottom: 10px;
+    
+}
+.datetag{
+    width: 120px;
+}
+
+.content {
+    font-size: 1.125rem;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+}

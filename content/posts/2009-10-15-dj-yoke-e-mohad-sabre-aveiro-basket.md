@@ -5,7 +5,7 @@ type: post
 date: 2009-10-15T05:06:41+00:00
 url: /dj-yoke-e-mohad-sabre-aveiro-basket/
 categories:
-  - Photography
+  - photography
 tags:
   - Aveiro
   - basket

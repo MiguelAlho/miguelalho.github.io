@@ -14,7 +14,19 @@
 {{ end }}
 
 {{ define "main" }}
+<section>
+  <div class="columns">
+  <div class="column is-one-fifth">
+    <span class="tag datetag">{{.Date.Format "2006-01-02"}}</span>
+  </div>
+  <div class="column">
+    {{ .Content }}
+  </div>
+  <div class="column is-one-fifth">
+    
+  </div>
+</div>
+</section>
+   
 
-      {{ .Content }}
-    </article>
 {{ end }}

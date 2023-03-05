@@ -7,7 +7,7 @@ url: /george-carlin-falece-aos-71-anos/
 categories:
   - Random Stuff
 tags:
-  - Photography
+  - photography
 
 ---
 Não tem nada a haver com fotografia, mas era um dos meus comediantes favoritos, há muito. Ficam uns clips para relembrar, ou dar a conhecer&#8230;

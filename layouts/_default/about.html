@@ -1,6 +1,21 @@
+{{ define "hero" }}
+<section class="hero is-info"> 
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title">
+        {{ .Title }}
+      </p>
+      <p class="subtitle">
+        
+      </p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
 {{ define "main" }}
   <div class="columns">    
-    <div class="column is-one-quarter">
+    <div class="column is-one-fifth">
       <div class="card>">
         <div>
           <figure class="image">
@@ -27,6 +42,10 @@
     <div class="column">
       {{ .Content }}
       
+    </div>
+
+    <div class="column is-one-fifth">
+
     </div>
   </div>
 {{ end }}

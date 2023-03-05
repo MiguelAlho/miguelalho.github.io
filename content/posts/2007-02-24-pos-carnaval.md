@@ -5,7 +5,7 @@ type: post
 date: 2007-02-24T11:01:00+00:00
 url: /pos-carnaval/
 categories:
-  - Photography
+  - photography
 tags:
   - iluminação
   - Murtosa

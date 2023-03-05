@@ -5,7 +5,7 @@ type: post
 date: 2007-04-05T19:14:00+00:00
 url: /santa-casa-da-misericordia-da-murtosa/
 categories:
-  - Photography
+  - photography
 tags:
   - máquinas fotográficas
   - Médio formato

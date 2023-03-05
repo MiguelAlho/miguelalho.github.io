@@ -5,7 +5,7 @@ type: post
 date: 2007-09-05T20:35:00+00:00
 url: /construir-um-laboratorio/
 categories:
-  - Photography
+  - photography
 tags:
   - D.I.Y. impressão
   - darkroom

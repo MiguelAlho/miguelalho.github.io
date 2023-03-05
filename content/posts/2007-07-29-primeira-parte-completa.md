@@ -5,7 +5,7 @@ type: post
 date: 2007-07-29T21:01:00+00:00
 url: /primeira-parte-completa/
 categories:
-  - Photography
+  - photography
 tags:
   - D.I.Y.
   - grande formato

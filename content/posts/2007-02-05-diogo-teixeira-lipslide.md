@@ -5,7 +5,7 @@ type: post
 date: 2007-02-05T15:42:00+00:00
 url: /diogo-teixeira-lipslide/
 categories:
-  - Photography
+  - photography
 tags:
   - equipamento
   - iluminação

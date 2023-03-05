@@ -5,11 +5,11 @@ type: post
 date: 2008-08-22T09:49:46+00:00
 url: /o-cais-do-bico-em-photosynth/
 categories:
-  - Photography
+  - photography
 tags:
   - bateira
   - Cais do Bico
-  - fotografia
+  - photography
   - moliceiro
   - Murtosa
   - photosynth

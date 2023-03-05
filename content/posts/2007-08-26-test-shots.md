@@ -5,7 +5,7 @@ type: post
 date: 2007-08-26T12:30:00+00:00
 url: /test-shots/
 categories:
-  - Photography
+  - photography
 tags:
   - câmara fotográfica
   - fuga de luz

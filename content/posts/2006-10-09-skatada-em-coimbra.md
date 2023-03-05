@@ -5,9 +5,9 @@ type: post
 date: 2006-10-09T15:51:00+00:00
 url: /skatada-em-coimbra/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 [<img src="http://static.flickr.com/110/265068332_31e22c3320_o.jpg" width="450" height="675" alt="Diogo - Tré flip - praça 8 maio 450" />][1]

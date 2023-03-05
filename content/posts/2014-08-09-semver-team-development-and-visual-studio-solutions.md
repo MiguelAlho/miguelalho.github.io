@@ -4,9 +4,6 @@ author: Miguel Alho
 type: post
 date: 2014-08-09T10:37:17+00:00
 url: /semver-team-development-and-visual-studio-solutions/
-categories:
-  - 'Code &amp; IT'
-
 ---
 Controlling dependency chains between libraries and services in complex software projects isn&#8217;t easy, though you can, to a certain point, get away with very simple solutions. I guess most teams end up applying some sort of versioning strategy to the software they develop, even if it&#8217;s saying that it&#8217;s a 1.0 at deployment time and stick with that. Like I said, you can get away with a lot, depending on your context. A lot of the projects I have worked in my career where single client and single installation applications. That pretty much meant the version of the software installed was whatever was built based on some source control revision. Match the deployed package to whatever revision it was created with and you had your version. This generally meant a single version across components that integrated the software.
 

@@ -5,9 +5,9 @@ type: post
 date: 2005-03-04T09:24:00+00:00
 url: /o-circuito-da-pagina-29-e-a-bolacha-de-chicolate-no-leite/
 categories:
-  - Photography
+  - photography
 tags:
-  - fotografia
+  - photography
 
 ---
 Bem na FotoPlus nº 4 vem um circuito para disparar o flash via som. Construi para testar e ver no que dava e fica o registo que funciona.

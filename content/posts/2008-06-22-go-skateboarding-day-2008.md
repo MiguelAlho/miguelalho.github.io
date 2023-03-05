@@ -7,7 +7,7 @@ url: /go-skateboarding-day-2008/
 categories:
   - Random Stuff
 tags:
-  - Photography
+  - photography
 
 ---
 [<img style="border-right:0;border-top:0;border-left:0;border-bottom:0;" height="628" alt="sebolinha-ollie450" src="http://lh5.ggpht.com/mytymyky/SF5YLD7yRMI/AAAAAAAAACM/yeo9jVgvvQY/sebolinha-ollie450_thumb%5B1%5D.jpg?imgmax=800" width="454" border="0" />][1]

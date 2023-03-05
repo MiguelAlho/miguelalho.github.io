@@ -5,9 +5,9 @@ type: post
 date: 2008-06-06T15:43:00+00:00
 url: /sunday-night-styles/
 categories:
-  - Photography
+  - photography
 tags:
-  - fotografia
+  - photography
 
 ---
 [<img height="675" alt="sebolao_450" src="http://farm4.static.flickr.com/3277/2555638727_7a9fbdbb8a_o.jpg" width="450" />][1] 

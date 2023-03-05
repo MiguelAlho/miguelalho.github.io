@@ -5,7 +5,7 @@ type: post
 date: 2007-10-08T23:36:00+00:00
 url: /recuperando-o-fresnel/
 categories:
-  - Photography
+  - photography
 tags:
   - D.I.Y. Fresnel
   - equipamento

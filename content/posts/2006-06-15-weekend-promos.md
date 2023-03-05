@@ -5,9 +5,9 @@ type: post
 date: 2006-06-15T09:43:00+00:00
 url: /weekend-promos/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 O fim de semana passado foi bastante produtivo &#8211; duas sessões promocionais em dois dias.. nada mau. 

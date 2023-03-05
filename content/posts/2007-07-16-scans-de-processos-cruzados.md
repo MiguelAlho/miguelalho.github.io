@@ -5,7 +5,7 @@ type: post
 date: 2007-07-16T23:01:00+00:00
 url: /scans-de-processos-cruzados/
 categories:
-  - Photography
+  - photography
 tags:
   - analógico
   - Aplicações

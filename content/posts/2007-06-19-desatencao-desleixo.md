@@ -5,7 +5,7 @@ type: post
 date: 2007-06-19T10:45:00+00:00
 url: /desatencao-desleixo/
 categories:
-  - Photography
+  - photography
 tags:
   - equipamento
   - iluminação

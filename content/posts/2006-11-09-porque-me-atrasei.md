@@ -5,9 +5,9 @@ type: post
 date: 2006-11-09T18:51:00+00:00
 url: /porque-me-atrasei/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 [<img src="http://static.flickr.com/113/293188670_deadc4d82d.jpg" width="450" height="344" alt="104-Bico_PDS_450" />][1]

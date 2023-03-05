@@ -5,9 +5,9 @@ type: post
 date: 2006-11-10T21:34:00+00:00
 url: /construcao/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 [<img src="http://static.flickr.com/100/293969584_40150676e5.jpg" width="450" height="454" alt="Holga0009_450" />][1]

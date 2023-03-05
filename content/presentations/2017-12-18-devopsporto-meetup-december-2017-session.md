@@ -4,11 +4,8 @@ author: Miguel Alho
 type: post
 date: 2017-12-18T10:57:12+00:00
 url: /devopsporto-meetup-december-2017-session/
-categories:
-  - 'Code &amp; IT'
 tags:
-  - Devops Porto
-  - Meetups
+  - 'talk'
 
 ---
 ![Me, presenting at the devopsporto meetup][1]

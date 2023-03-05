@@ -5,9 +5,9 @@ type: post
 date: 2006-09-18T12:19:00+00:00
 url: /moliceiro/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 [<img src="http://static.flickr.com/97/246435089_d78d1d1bd5.jpg" width="450" height="455" alt="02-navegador450" />][1]

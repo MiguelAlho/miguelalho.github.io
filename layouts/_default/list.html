@@ -14,12 +14,25 @@
 {{ end }}
 
 {{ define "main" }}
-    <ul>
-    <!-- Ranges through content/posts/*.md -->
-    {{ range .Pages }}
-        <li style="list-style: none;">            
-            <span class="tag" style="width: 150px;">{{.Date.Format "2006-01-02"}}</span><a href="{{.Permalink}}"> | {{.Title}}</a>
-        </li>
-    {{ end }}
-    </ul>
+<div class="columns">
+    <div class="column is-one-fifth">
+        asa
+    </div>
+    <div class="column">
+        <ul class="listing">
+            {{ range .Pages }}
+            <li>            
+                <span class="tag datetag">{{.Date.Format "2006-01-02"}}</span><a href="{{.Permalink}}"> {{.Title}}</a>
+                {{ range $tag := .Params.Tags }}
+                    <span class="tag is-info is-light is-rounded">{{ $tag }}</span>
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+        
+    </div>
+    <div class="column is-one-fifth">
+    
+    </div>
+</div>
 {{ end }}

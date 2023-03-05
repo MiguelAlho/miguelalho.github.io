@@ -5,9 +5,9 @@ type: post
 date: 2006-03-05T21:35:00+00:00
 url: /holga-modificada/
 categories:
-  - Photography
+  - photography
 tags:
-  - fotografia
+  - photography
 
 ---
 <img src="http://static.flickr.com/37/108329805_349a1aba5d.jpg" width="450" height="302" alt="holga_mike2_450" />  

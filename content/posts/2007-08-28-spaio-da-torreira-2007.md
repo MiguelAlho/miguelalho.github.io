@@ -5,11 +5,11 @@ type: post
 date: 2007-08-28T09:58:00+00:00
 url: /spaio-da-torreira-2007/
 categories:
-  - Photography
+  - photography
   - Random Stuff
 tags:
   - 2007
-  - fotografia
+  - photography
   - S. Paio da Torreira
 
 ---

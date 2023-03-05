@@ -5,7 +5,7 @@ type: post
 date: 2007-03-18T13:44:00+00:00
 url: /nostalgia/
 categories:
-  - Photography
+  - photography
   - Random Stuff
 tags:
   - revistas

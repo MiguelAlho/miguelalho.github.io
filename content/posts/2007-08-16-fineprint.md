@@ -5,7 +5,7 @@ type: post
 date: 2007-08-16T23:19:00+00:00
 url: /fineprint/
 categories:
-  - Photography
+  - photography
   - Random Stuff
 tags:
   - Blast Boardshop

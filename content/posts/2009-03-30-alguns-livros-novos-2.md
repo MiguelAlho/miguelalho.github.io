@@ -5,7 +5,7 @@ type: post
 date: 2009-03-31T00:59:44+00:00
 url: /alguns-livros-novos-2/
 categories:
-  - Photography
+  - photography
 tags:
   - filmmaking
   - lighting

@@ -5,7 +5,7 @@ type: post
 date: 2007-08-07T11:11:00+00:00
 url: /murtosa-uma-terra-a-descobrir/
 categories:
-  - Photography
+  - photography
 tags:
   - livros
   - Murtosa

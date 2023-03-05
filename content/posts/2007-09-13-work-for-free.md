@@ -5,7 +5,7 @@ type: post
 date: 2007-09-13T14:42:00+00:00
 url: /work-for-free/
 categories:
-  - Photography
+  - photography
   - Random Stuff
 tags:
   - artigo

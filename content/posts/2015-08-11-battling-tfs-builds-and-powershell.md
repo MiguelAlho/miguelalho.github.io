@@ -4,15 +4,6 @@ author: Miguel Alho
 type: post
 date: 2015-08-11T22:19:22+00:00
 url: /battling-tfs-builds-and-powershell/
-categories:
-  - 'Code &amp; IT'
-tags:
-  - builds
-  - CI
-  - Git
-  - TFS
-  - vNext
-
 ---
 My last few days have been about getting DNX builds to work in TFS. I&#8217;ve got a couple of projects / solutions of different types ongoing, between web apps, web APIs and class libraries. I consider a good build system as a fundamental component in the development process, to aid in continuous integration and enable continuous deployment.
 

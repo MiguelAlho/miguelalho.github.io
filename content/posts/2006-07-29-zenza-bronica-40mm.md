@@ -5,9 +5,9 @@ type: post
 date: 2006-07-29T10:00:00+00:00
 url: /zenza-bronica-40mm/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 [<img src="http://static.flickr.com/70/200865741_b207f9895d.jpg" width="450" height="451" alt="sinal1_450" />][1]

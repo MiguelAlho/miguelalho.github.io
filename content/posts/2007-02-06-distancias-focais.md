@@ -5,7 +5,7 @@ type: post
 date: 2007-02-06T09:59:00+00:00
 url: /distancias-focais/
 categories:
-  - Photography
+  - photography
 tags:
   - equipamento
   - iluminação

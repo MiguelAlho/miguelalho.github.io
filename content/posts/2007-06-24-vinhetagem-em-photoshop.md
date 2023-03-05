@@ -5,7 +5,7 @@ type: post
 date: 2007-06-24T20:04:00+00:00
 url: /vinhetagem-em-photoshop/
 categories:
-  - Photography
+  - photography
 tags:
   - máscara
   - Photoshop

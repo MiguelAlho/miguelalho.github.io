@@ -5,9 +5,9 @@ type: post
 date: 2006-11-10T21:18:00+00:00
 url: /sem-nuvens-hoje/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 [<img src="http://static.flickr.com/114/293969578_834d7bc31a.jpg" width="450" height="344" alt="PinholePolaroid0006_450" />][1]

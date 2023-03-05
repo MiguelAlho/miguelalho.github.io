@@ -5,7 +5,7 @@ type: post
 date: 2007-06-20T10:07:00+00:00
 url: /vista-e-cor-um-problema/
 categories:
-  - Photography
+  - photography
 tags:
   - equipamento
   - gestão de cor

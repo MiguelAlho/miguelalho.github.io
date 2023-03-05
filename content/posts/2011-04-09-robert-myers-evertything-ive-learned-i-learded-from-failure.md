@@ -4,8 +4,8 @@ author: Miguel Alho
 type: post
 date: 2011-04-09T11:06:15+00:00
 url: /robert-myers-evertything-ive-learned-i-learded-from-failure/
-categories:
-  - 'Code &amp; IT'
+tags:
+  - 'recommedned'
 
 ---
 Um excelente talk no Info-Q a não perder!

@@ -5,9 +5,9 @@ type: post
 date: 2006-09-09T18:33:00+00:00
 url: /corrida-das-bateiras-spaio-da-torreira/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 [<img src="http://static.flickr.com/83/238553882_78898eeb1b.jpg" width="450" height="318" alt="bateiras_blog_450" />][1]  

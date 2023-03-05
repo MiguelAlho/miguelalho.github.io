@@ -4,12 +4,8 @@ author: Miguel Alho
 type: post
 date: 2012-05-25T11:01:47+00:00
 url: /beginners-guide-to-postgresql/
-categories:
-  - 'Code &amp; IT'
 tags:
-  - curso
-  - formação
-  - PostgreSQL
+  - 'course'
 
 ---
 Acabei de publicar um [novo curso de iniciação às bases de dados relacionais em PostgreSQL no Udemy][1], um site de formação on-line. O curso está dividido em 3 módulos &#8211; introdução, criação e manipulação das estruturas de dados, e SQL. Actualmente, tem 18 lições em vídeo disponíveis, e muitas em produção.

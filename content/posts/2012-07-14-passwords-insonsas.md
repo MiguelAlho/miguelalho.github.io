@@ -4,12 +4,8 @@ author: Miguel Alho
 type: post
 date: 2012-07-14T12:15:15+00:00
 url: /passwords-insonsas/
-categories:
-  - 'Code &amp; IT'
 tags:
-  - password
-  - segurança
-
+  - security
 ---
 Um dos pontos fulcrais na segurança de um site é a gestão de passwords dos utilizadores.Sempre que nós como programadores implementamos um sistema de autenticação que recorre a nome de utilizador e password, temos de ter cuidados especiais. Vulnerabilidades que desconhecemos nos nossos sistemas podem comprometer a base de dados e tornar o seu conteúdo acessível.
 

@@ -5,10 +5,10 @@ type: post
 date: 2007-02-04T21:34:00+00:00
 url: /diogo-teixeira/
 categories:
-  - Photography
+  - photography
   - Random Stuff
 tags:
-  - fotografias
+  - photographys
   - retrato
   - Skate
 

@@ -5,9 +5,9 @@ type: post
 date: 2005-11-07T13:17:00+00:00
 url: /photoshop-for-photographers/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 ![][1]  

@@ -5,7 +5,7 @@ type: post
 date: 2007-08-30T10:32:00+00:00
 url: /more-tests/
 categories:
-  - Photography
+  - photography
 tags:
   - Cambeia
   - camera fotográfica

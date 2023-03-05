@@ -4,9 +4,6 @@ author: Miguel Alho
 type: post
 date: 2017-12-18T15:55:05+00:00
 url: /merging-assemblies-with-ilrepack/
-categories:
-  - 'Code &amp; IT'
-
 ---
 Typically, in .NET, to merge assemblies you would use ILMerge. [ILRepack][1] is another project you can use and that has had updates recently (and a lot of activity on Github).
 

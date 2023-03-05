@@ -4,8 +4,8 @@ author: Miguel Alho
 type: post
 date: 2016-08-04T22:35:37+00:00
 url: /delivering-changes-for-applications-and-databases/
-categories:
-  - 'Code &amp; IT'
+tags:
+  - 'talk'
 
 ---
 I had a chance to do a presentation with my good friend <a href="http://www.eduardopiairo.com/" target="_blank">Eduardo Piairo</a> on &#8220;Delivering Changes for Applications and Database&#8221; at the monthly <a href="http://www.portodata.net/" target="_blank">PortoData </a>meeting. This was a problem we worked on quite a lot at Celfinet, the client whom I worked for previously, where we met.

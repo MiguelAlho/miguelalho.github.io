@@ -4,10 +4,8 @@ author: Miguel Alho
 type: post
 date: 2015-05-03T14:44:01+00:00
 url: /things-worth-watching-2-domain-service-aggregators/
-categories:
-  - 'Code &amp; IT'
 tags:
-  - ThingsWorthWatching
+  - recommended
 
 ---
 Great talk from Caolite O&#8217;Conner about domain-driven microservice development. Some great take-aways for me where the aggregation services and the API versioning schemes.

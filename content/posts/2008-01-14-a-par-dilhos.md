@@ -5,12 +5,12 @@ type: post
 date: 2008-01-14T22:47:00+00:00
 url: /a-par-dilhos/
 categories:
-  - Photography
+  - photography
 tags:
   - "A par d'ilhós"
   - CD
   - Estarreja
-  - fotografia
+  - photography
   - Miguel Santos
   - Murtosa
   - Pardilhó

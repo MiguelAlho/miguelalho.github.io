@@ -5,11 +5,11 @@ type: post
 date: 2008-05-08T11:14:00+00:00
 url: /fotografar-casamentos-parte-2/
 categories:
-  - Photography
+  - photography
 tags:
   - análise
   - casamentos
-  - fotografia
+  - photography
   - técnica
 
 ---

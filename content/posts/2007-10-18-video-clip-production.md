@@ -5,7 +5,7 @@ type: post
 date: 2007-10-18T10:51:00+00:00
 url: /video-clip-production/
 categories:
-  - Photography
+  - photography
 tags:
   - Fresnel
   - Governo Sombra

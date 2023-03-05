@@ -5,9 +5,9 @@ type: post
 date: 2006-11-13T19:08:00+00:00
 url: /nao-sei-porque/
 categories:
-  - Photography
+  - photography
 tags:
-  - Photography
+  - photography
 
 ---
 [<img src="http://static.flickr.com/113/296600933_635e672563.jpg" width="450" height="296" alt="Holga0032_450" />][1]
