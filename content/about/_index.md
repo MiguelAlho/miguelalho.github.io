@@ -1,12 +1,15 @@
 ---
 title: "About"
 date: 2023-02-28T18:37:07Z
+layout: about
+description:
+    Hi I'm Miguel. Thanks for taking time to check this out.
+
+    I'm a web dev, currently at a Principal level, and have close to 20 years of experience developing software applications and back-end services with .Net technologies. I enjoy exploring topics on DDD, microservices, CQRS+ES and TDD. 
+
+    I also help organize the DevOps Aveiro meetups and DevOpsDays Portugal conference.
+
 ---
-Hi I'm Miguel. Thanks for taking time to check this out.
-
-I'm a web dev, currently at a Principal level, and have close to 20 years of experience developing software applications and back-end services with .Net technologies. I enjoy exploring topics on DDD, microservices, CQRS+ES and TDD. 
-
-I also help organize the DevOps Aveiro meetups and DevOpsDays Portugal conference.
 
 ## Academic Info
 

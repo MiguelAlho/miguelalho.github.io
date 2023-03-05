@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <div class="columns">    
+    <div class="column is-one-quarter">
+      <div class="card>">
+        <div>
+          <figure class="image">
+            <img src="MiguelAlho-768x768.jpg" class="is-rounded"/>
+          </figure>
+        </div>  
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Miguel Alho</p>
+              <p class="subtitle is-6">@MytyMyky</p>
+            </div>
+          </div>      
+          
+          <div class="content">
+            {{ .Description }}
+          </div>
+        </div>
+      </div>
+
+
+      
+    </div>
+    <div class="column">
+      {{ .Content }}
+      
+    </div>
+  </div>
+{{ end }}

@@ -1,5 +1,20 @@
+{{ define "hero" }}
+<section class="hero is-info"> 
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title">
+        {{ .Title }}
+      </p>
+      <p class="subtitle">
+        
+      </p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
 {{ define "main" }}
-      <h1>{{ .Title }}</h1>
+
       {{ .Content }}
     </article>
 {{ end }}
