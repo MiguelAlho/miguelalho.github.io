@@ -24,8 +24,7 @@
     <div class="tile notification is-info is-child box is-2">
       <p class="subtitle">community projects</p>
     </div>
-    <div class="tile notification is-parent box">
-      
+    <div class="tile notification is-parent box">      
       <div class="tile is-child box">
         <div class="card-image" style="height:244px;">
             <figure class="image">
@@ -38,7 +37,6 @@
           <div class="card-content">
             <span class="title">DevOps Aveiro</span>
           </div>
-        
       </div>
 
       <div class="tile is-child box">
@@ -51,7 +49,7 @@
           </div>
           <div class="card-content">
             <span class="title">DevOps Porto</span>
-        </div>
+          </div>
       </div>
       
       <div class="tile is-child box">
@@ -65,10 +63,36 @@
           
           <div class="card-content">
             <span class="title">DevOpsDays Portugal</span>
-        </div>
+          </div>
      
     </div>
   </div>  
 </div>
+</div>
+
+
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <div class="tile notification is-info is-child box is-2">
+      <p class="subtitle">latest bookmarks</p>
+    </div>
+    <div class="tile notification is-parent box is-vertical">
+      <div class="tile is-child box">
+        <ul>         
+        {{ range first 5 .Site.Taxonomies.tags.bookmark }}
+          <li>
+            <span class="tag datetag">{{.Page.Date.Format "2006-01-02"}}</span><a href="{{.Page.Permalink}}"> {{.Page.Title}}</a>
+            {{ range $tag := .Params.Tags }}
+            <span class="tag is-info is-light is-rounded">{{ $tag }}</span>
+            {{ end }}
+          </li>      
+        {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>  
+</div>
+
+
 
 {{ end }}
