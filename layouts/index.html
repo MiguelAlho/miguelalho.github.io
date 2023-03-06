@@ -1,35 +1,74 @@
 {{ define "main" }}
-<div class="notification is-info has-text-centered">featured content</div>
-  
-{{ range first 3 .Site.Taxonomies.tags.featured }}
-<div class="columns">
-    <div class="column is-one-fifth" style="text-align-last: right;">
-       
+
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <div class="tile notification is-info is-child box is-2">
+      <p class="subtitle">featured posts</p>
     </div>
-    <div class="column">
-        <ul class="listing">
-            <li>            
-                <span class="tag datetag">{{.Page.Date.Format "2006-01-02"}}</span><a href="{{.Page.Permalink}}"> {{.Page.Title}}</a>
-                {{ range $tag := .Params.Tags }}
-                    <span class="tag is-info is-light is-rounded">{{ $tag }}</span>
-                {{ end }}
-            </li>
-            {{ end }}
-        </ul>
-        
+    <div class="tile notification is-parent box is-vertical">
+      {{ range first 3 .Site.Taxonomies.tags.featured }}
+      <div class="tile is-child box">
+        <span class="tag datetag">{{.Page.Date.Format "2006-01-02"}}</span><a href="{{.Page.Permalink}}"> {{.Page.Title}}</a>
+        {{ range $tag := .Params.Tags }}
+            <span class="tag is-info is-light is-rounded">{{ $tag }}</span>
+        {{ end }}
+      </div>
+      
+      {{ end }}
     </div>
-    <div class="column is-one-fifth">
-    
-    </div>
+  </div>  
 </div>
 
-<section>
-  <div class="notification is-info has-text-centered">Check out these community projects</div>
-  <div class="level">
-    
-    <div class="level-item">Devops Aveiro</div>
-    <div class="level-item">DevOps Porto</div>
-    <div class="level-item">Devopsdays Portugal</div>
-  </div>
-</section>
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <div class="tile notification is-info is-child box is-2">
+      <p class="subtitle">community projects</p>
+    </div>
+    <div class="tile notification is-parent box">
+      
+      <div class="tile is-child box">
+        <div class="card-image" style="height:244px;">
+            <figure class="image">
+              <a href="https://www.meetup.com/pt-BR/devops-aveiro/" target="_blank">
+                <img src="devopsaveiro.png" alt="devops aveiro logo" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="card-content">
+            <span class="title">DevOps Aveiro</span>
+          </div>
+        
+      </div>
+
+      <div class="tile is-child box">
+         <div class="card-image" style="height:244px;">
+            <figure class="image">
+              <a href="https://www.meetup.com/pt-BR/devopsporto/" target="_blank">
+                <img src="devopsporto.jpg" alt="devops porto logo"/>
+              </a>
+            </figure>
+          </div>
+          <div class="card-content">
+            <span class="title">DevOps Porto</span>
+        </div>
+      </div>
+      
+      <div class="tile is-child box">
+          <div class="card-image" style="height:244px;">
+            <figure class="image">
+              <a href="https://devopsdays.org/events/2023-portugal/welcome/" target="_blank">
+                <img src="devopsdaysportugal.png" alt="devopsdays Portugal logo" />
+              </a>
+            </figure>
+          </div>
+          
+          <div class="card-content">
+            <span class="title">DevOpsDays Portugal</span>
+        </div>
+     
+    </div>
+  </div>  
+</div>
+
 {{ end }}
