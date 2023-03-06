@@ -14,7 +14,18 @@
 {{ end }}
 
 {{ define "main" }}
-zxcxzc
+dasdsa
+{{ if isset .Page.video}}
+<section>
+  <div class="columns">
+    <div class="column is-one-fifth"></div>
+    <div class="column">
+      {{ .Video.Link}}
+    </div>
+    <div class="column is-one-fifth"></div>
+  </div>
+</section>
+{{ end }}
 <section>
   <div class="columns">
   <div class="column is-one-fifth">
