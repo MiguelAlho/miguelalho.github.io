@@ -3,6 +3,8 @@ title: You went to a conference… what’s next?
 author: Miguel Alho
 date: 2019-06-05T14:57:22+00:00
 slug: you-went-to-a-conference-whats-next
+tags: 
+    - featured
 ---
 Conferences are naturally a great place to get some new info and insights into techniques and solutions to problems. They also serve to validate and critique our understandings and assumptions on how we work and the choices we are making in that context. But the learning and inspiration that goes on at the event needs to be put into practice also, after the event. But how?
 

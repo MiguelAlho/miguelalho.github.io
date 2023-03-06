@@ -14,25 +14,27 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="columns">
-    <div class="column is-one-fifth">
-        asa
-    </div>
-    <div class="column">
-        <ul class="listing">
-            {{ range .Pages }}
-            <li>            
-                <span class="tag datetag">{{.Date.Format "2006-01-02"}}</span><a href="{{.Permalink}}"> {{.Title}}</a>
-                {{ range $tag := .Params.Tags }}
-                    <span class="tag is-info is-light is-rounded">{{ $tag }}</span>
-                {{ end }}
-            </li>
-            {{ end }}
-        </ul>
-        
-    </div>
-    <div class="column is-one-fifth">
-    
-    </div>
-</div>
+{{ range .Pages.GroupByDate "2006" }}
+  <div class="columns yearblock">
+      <div class="column is-one-fifth" style="text-align-last: right;">
+          <span class="tag yeartag is-info is-light is-medium">{{ .Key }}</span>
+      </div>
+      <div class="column">
+          <ul class="listing">
+              {{ range .Pages }}
+              <li>            
+                  <span class="tag datetag">{{.Date.Format "2006-01-02"}}</span><a href="{{.Permalink}}"> {{.Title}}</a>
+                  {{ range $tag := .Params.Tags }}
+                      <span class="tag is-info is-light is-rounded">{{ $tag }}</span>
+                  {{ end }}
+              </li>
+              {{ end }}
+          </ul>
+          
+      </div>
+      <div class="column is-one-fifth">
+      
+      </div>
+  </div>
+{{ end }}
 {{ end }}
