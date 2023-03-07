@@ -5,6 +5,7 @@ type: post
 date: 2016-01-11T19:05:46+00:00
 url: /pacts-to-the-resque-beth-skurrie/
 bookmark: talk
+type: bookmarks
 tags:
   - bookmark
   - talk

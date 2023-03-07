@@ -5,6 +5,7 @@ type: post
 date: 2015-08-15T11:01:54+00:00
 url: /how-to-create-an-untraditional-engineering-career-path/
 bookmark: talk
+type: bookmarks
 tags:
  - bookmark
  - talk

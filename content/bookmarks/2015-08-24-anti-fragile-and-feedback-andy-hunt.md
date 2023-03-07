@@ -5,6 +5,7 @@ type: post
 date: 2015-08-24T15:02:49+00:00
 url: /anti-fragile-and-feedback-andy-hunt/
 bookmark: talk
+type: bookmarks
 tags:
   - bookmark
   - talk

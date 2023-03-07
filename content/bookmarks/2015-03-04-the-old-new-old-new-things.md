@@ -5,6 +5,7 @@ type: post
 date: 2015-03-04T18:20:41+00:00
 url: /the-old-new-old-new-things/
 bookmark: talk
+type: bookmarks
 tags:
   - bookmark
   - talk

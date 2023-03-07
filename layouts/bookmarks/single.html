@@ -13,12 +13,35 @@
     <span class="tag datetag">{{.Date.Format "2006-01-02"}}</span>
   </div>
   <div class="column">
+    <article class="message">
+      <div class="message-body">
+        {{ .Summary }}
+      </div>
+    </article>
+    
+    {{ if isset .Page.Params "notes"  }}
+    {{ range .Page.Params.Notes  }}
+      <article class="message is-info">
+        <div class="message-header">
+          <p>{{ .type }} {{ .time }}</p>
+        </div>
+        <div class="message-body">
+          {{ .content }}
+        </div>
+
+        <div class="message-body">
+          {{ .comment }}
+        </div>
+      </article>
+
+    {{ end }}
+    {{ end }}
+
     {{ .Content }}
   </div>
   <div class="column is-one-fifth">
-    
+
   </div>
 </div>
 </section>
-   
 {{ end }}
