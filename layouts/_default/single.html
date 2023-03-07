@@ -1,34 +1,10 @@
 {{ define "hero" }}
-<section class="hero is-info"> 
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <p class="title">
-        {{ .Title }}
-      </p>
-      <p class="subtitle">
-        
-      </p>
-    </div>
-  </div>
-</section>
+{{ partial "title.html" (dict "title" .Title) }}
 {{ end }}
 
 {{ define "main" }}
-
 {{ if and ( and (isset .Page.Params "video") ( isset .Page.Params.Video "source" )) ( eq .Page.Params.Video.Source "youtube")  }}
-<section>
-  <div class="columns">
-  <div class="column is-one-fifth">
-    
-  </div>
-  <div class="column">
-    {{ partial "youtubeembed.html" (dict "link" .Page.Params.Video.Link) }}
-  </div>
-  <div class="column is-one-fifth">
-    
-  </div>
-</div>
-</section>
+  {{ partial "videoSection.html" (dict "link" .Page.Params.Video.Link) }}
 {{ end}}
 
 <section>

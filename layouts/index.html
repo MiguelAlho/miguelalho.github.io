@@ -9,9 +9,7 @@
       {{ range first 3 .Site.Taxonomies.tags.featured }}
       <div class="tile is-child box">
         <span class="tag datetag">{{.Page.Date.Format "2006-01-02"}}</span><a href="{{.Page.Permalink}}"> {{.Page.Title}}</a>
-        {{ range $tag := .Params.Tags }}
-            <span class="tag is-info is-light is-rounded">{{ $tag }}</span>
-        {{ end }}
+        
       </div>
       
       {{ end }}
@@ -78,16 +76,14 @@
     </div>
     <div class="tile notification is-parent box is-vertical">
       <div class="tile is-child box">
-        <ul>         
         {{ range first 5 .Site.Taxonomies.tags.bookmark }}
-          <li>
-            <span class="tag datetag">{{.Page.Date.Format "2006-01-02"}}</span><a href="{{.Page.Permalink}}"> {{.Page.Title}}</a>
-            {{ range $tag := .Params.Tags }}
-            <span class="tag is-info is-light is-rounded">{{ $tag }}</span>
-            {{ end }}
-          </li>      
-        {{ end }}
-        </ul>
+        <div class="tile is-child box">
+          <span class="tag datetag">{{.Page.Date.Format "2006-01-02"}}</span><a href="{{.Page.Permalink}}"> {{.Page.Title}}</a>
+          {{ range $tag := .Params.Tags }}
+          <span class="tag is-info is-light is-rounded">{{ $tag }}</span>
+          {{ end }}
+        </div>      
+        {{ end }}        
       </div>
     </div>
   </div>  
