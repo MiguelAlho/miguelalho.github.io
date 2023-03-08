@@ -39,6 +39,8 @@
       
       {{ if eq .type "note" }}
         {{ $.Scratch.Set "noteclass" "is-info" }}
+      {{ else if eq .type "slide" }}
+        {{ $.Scratch.Set "noteclass" "is-info" }}
       {{ else if eq .type "quote" }}
         {{ $.Scratch.Set "noteclass" "is-dark quotenote" }}
       {{ else if eq .type "comment" }}
@@ -58,6 +60,9 @@
           <p>{{ .type }} </p>
         </div> -->
         <div class="message-body">
+          {{ if .image }}
+          <img src="/bookmarks/{{ .image }}" class=""/>
+          {{ end }}
           {{ .content | markdownify}}
         </div>
       </article>
