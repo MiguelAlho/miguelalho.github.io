@@ -27,8 +27,7 @@ notes:
         CQRS is really a "stepping stone" into Event Sourcing. It's a valuable pattern, but not the end goal.
     
     
-        This implies that empathy with whom you collaborate is required. Junior eng. jumping into an existing codebase will be challenged without the needed hand-holding and guidance on how to get into the right mindset. 
-    comment: 
+        This implies that empathy with whom you collaborate is required. Junior eng. jumping into an existing codebase will be challenged without the needed hand-holding and guidance on how to get into the right mindset.  
 
   - type: quote
     time: 10:43
@@ -51,7 +50,6 @@ notes:
 
 
         "It's a different perspective, that also changes how a domain expert looks at a domain"
-    comment: 
 
   - type: quote
     time: 12:45
@@ -61,13 +59,11 @@ notes:
         
 
         More importantly,... it absolutely forces you to have a temporal focus about what happens within the system. Time becomes a crucial factor of your system. (order) becomes a domain problem.
-    comment:  
 
   - type: quote
     time: 17:00
     content: 
         Event sourcing is naturally functional
-    comment:
 
   - type: note
     time: 18:00
@@ -84,23 +80,65 @@ notes:
 
 
         Even some ideas from event sourcing are applied in other technologies like Flux and Kafka
-    comment:
-
+    
   - type: quote
     time: 22:00
     content: 
        Once you start dealing with immutable events, you need to start thinking about things like corrections
-    comment:
-
+    
   - type: quote
     time: 22:00
     content: 
       (on applying event sourcing everywhere) ... This is a really really bad idea. You want to apply it selectively, only in a few places. ... As a rule., you really don't want to event source everything. Event sourcing and CQRS are not top-level architectures.
-    comment:
-  
+    
   - type: quote
     time: 28:15
     content: 
       There's no such thing as a one-way command
-    comment:
+    
+  - type: note
+    content: 
+      Some of the pitfalls many people fall into or bad things that have happened
+
+
+      * Trying to apply ES everywhere / everything instead of selectively
+
+      * Dogma 
+      
+        * mutable / immutable Value Objects, 
+        
+        * Process managers and Sagas 
+        
+        * Can write side read from read side? 
+        
+        * inputs = outputs i.e. it's not necessarily one to one,
+        
+        * one-way commands (i.e. it's not fire and forget)
+
+        * not recognizing you may not be the "book of record" / source of truth
+
+      * Frameworks (i.e. people still trying to build a ES framework, like every other one has become)
+
+      * Use of naive / simple examples, when real business problems are way more complex and where the real value are.
+
+      * Lack of process managers - systems are much harder understand when you have to look at all the systems to see how they are connected
+
+  - type: note
+    content: 
+      Future focus -
+
+
+      * More functional programming 
+      
+      * More push on Process managers
+
+      * Actors / actor models
+      
+      * Lack of linearization (global ordering of events), applicable to occasionally connected systems. (though you should linearize if you can because it simplifies the system)
+
+      * git style work models (to help offline access situations)
+
+      * N-temporal models (there may be multiple timelines)
+
+        * "as-at" vs. "as-of" querying
 ---
