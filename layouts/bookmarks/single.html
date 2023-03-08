@@ -10,7 +10,7 @@
 <section>
   <div class="columns">
   <div class="column is-one-fifth">
-    <span class="tag datetag">{{.Date.Format "2006-01-02"}}</span>
+    <!-- <span class="tag datetag">{{.Date.Format "2006-01-02"}}</span> -->
   </div>
   <div class="column">
     <article class="message">
@@ -18,22 +18,57 @@
         {{ .Summary }}
       </div>
     </article>
+  </div>
+  <div class="column is-one-fifth">
+
+  </div>
+</div>
+</section>
     
     {{ if isset .Page.Params "notes"  }}
+<h2>Notes & Comments</h2>
+    {{ $noteid := 0 }}
+    {{ $noteclass := "" }}
+
     {{ range .Page.Params.Notes  }}
-      <article class="message is-info">
-        <div class="message-header">
-          <p>{{ .type }} {{ .time }}</p>
-        </div>
+      {{ $noteid := add $noteid 1 }}
+      
+      {{ with (eq .type "note") }}
+        {{ $noteclass := "is-info" }}
+      {{ end }}
+      {{ with (eq .type "quote") }}
+        {{ $noteclass := "is-dark" }}
+      {{ end }}
+      {{ with (eq .type "comment") }}
+        {{ $noteclass := "is-primary" }}
+      {{ end }}
+<section>
+  <div class="columns">
+  <div class="column is-one-fifth" style="text-align-last: right;">
+    <span class="tag datetag">{{ .time }}</span>
+  </div>
+  <div class="column">
+
+      <article class="message {{ $noteclass }}">
+        <!-- <div class="message-header">
+          <p>{{ .type }} </p>
+        </div> -->
         <div class="message-body">
           {{ .content | markdownify}}
         </div>
-
+      </article>
+    </div>
+    <div class="column is-one-fifth">
+      {{ if and ( isset . "comment" ) ( ne ( trim .comment  " ") "" ) }}
+      <article class="message is-info is-small">
         <div class="message-body">
           {{ .comment }}
         </div>
       </article>
-
+      {{ end }}
+    </div>
+  </div>
+  </section>
     {{ end }}
     {{ end }}
 
