@@ -65,19 +65,42 @@ notes:
 
   - type: quote
     time: 17:00
-    image: slide1.jpg
     content: 
         Event sourcing is naturally functional
     comment:
-        
-  - type: quote
-    time: 03:34
-    image: slide1.jpg
-    content: 
-        blsadkjashdkashd as dklasdjkasdjk aklsjd
-        asd askjdhjkasdasd
-        a kjsdjkasdaksj dhkjas jkdhajksdjks
-    comment: 
-        I really like... jhdsajd skld
 
+  - type: note
+    time: 18:00
+    content: 
+        We're seeing the rise of Event sourcing at the same time as the rise of other ideas, somewhat in tandem, as there are aspects of each that are interrelated
+        
+        * functional programming (has all the functions needed for pattern matching and left folds, natively)
+
+        * actor models 
+
+        * immutable infrastructure 
+
+        * microservices
+
+
+        Even some ideas from event sourcing are applied in other technologies like Flux and Kafka
+    comment:
+
+  - type: quote
+    time: 22:00
+    content: 
+       Once you start dealing with immutable events, you need to start thinking about things like corrections
+    comment:
+
+  - type: quote
+    time: 22:00
+    content: 
+      (on applying event sourcing everywhere) ... This is a really really bad idea. You want to apply it selectively, only in a few places. ... As a rule., you really don't want to event source everything. Event sourcing and CQRS are not top-level architectures.
+    comment:
+  
+  - type: quote
+    time: 28:15
+    content: 
+      There's no such thing as a one-way command
+    comment:
 ---

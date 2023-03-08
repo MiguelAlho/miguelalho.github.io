@@ -26,30 +26,34 @@
 </section>
     
     {{ if isset .Page.Params "notes"  }}
-<h2>Notes & Comments</h2>
-    {{ $noteid := 0 }}
-    {{ $noteclass := "" }}
+<section class="level notes-header">
+  <div class="level-item has-text-centered">
+    <h2>Notes & Comments</h2>
+  </div> 
+</section>
+    {{ $.Scratch.Set "noteid" 0 }}
+    {{ $.Scratch.Set "noteclass" 0 }}
 
     {{ range .Page.Params.Notes  }}
-      {{ $noteid := add $noteid 1 }}
+      {{ $.Scratch.Set "noteid" (add ($.Scratch.Get "noteid") 1) }}
       
-      {{ with (eq .type "note") }}
-        {{ $noteclass := "is-info" }}
-      {{ end }}
-      {{ with (eq .type "quote") }}
-        {{ $noteclass := "is-dark" }}
-      {{ end }}
-      {{ with (eq .type "comment") }}
-        {{ $noteclass := "is-primary" }}
+      {{ if eq .type "note" }}
+        {{ $.Scratch.Set "noteclass" "is-info" }}
+      {{ else if eq .type "quote" }}
+        {{ $.Scratch.Set "noteclass" "is-dark quotenote" }}
+      {{ else if eq .type "comment" }}
+        {{ $.Scratch.Set "noteclass" "is-primary" }}
       {{ end }}
 <section>
   <div class="columns">
   <div class="column is-one-fifth" style="text-align-last: right;">
-    <span class="tag datetag">{{ .time }}</span>
+    <span class="tag datetag icon"><i class="fa fa-play"></i>&nbsp;&nbsp;{{ .time }}</span>
+    <span class="icon">
+      <a href="#{{ $.Scratch.Get "noteid" }}"><i class="fa fa-link"></i></a>
+    </span>
   </div>
   <div class="column">
-
-      <article class="message {{ $noteclass }}">
+      <article class="message {{ $.Scratch.Get "noteclass" }}" id="{{ $.Scratch.Get "noteid" }}">
         <!-- <div class="message-header">
           <p>{{ .type }} </p>
         </div> -->
