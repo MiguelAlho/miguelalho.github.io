@@ -6,7 +6,6 @@ type: post
 url: /bookmark-magical-rebalance-protocol-of-apache-kafka/
 bookmark: talk
 type: bookmarks
-contentdate: 2018-09-27
 author: 
   name: Gwen Shapira
   twitter: 
@@ -15,6 +14,11 @@ video:
   source: youtube
   id: MmLezWRI3Ys
   link: https://www.youtube.com/embed/MmLezWRI3Ys
+context:
+  event: conference
+  name: strangeloop
+  date: 2018-09-27
+  link: https://www.thestrangeloop.com/2018/sessions.html
 tags:
   - bookmark
   - talk
