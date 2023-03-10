@@ -1,11 +1,55 @@
-<figure class="image is-16by9">
+<figure class="image is-16by9" >
     <iframe 
+        id="bookmark-video"
         class="has-ratio"
-        width="820" height="460"
-        src="{{ .link }}" 
+        src="{{ .link }}?enablejsapi=1" 
         title="YouTube video player"
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen>
     </iframe>
 </figure>
+<script type="text/javascript">
+    var tag = document.createElement('script');
+    tag.id = 'iframe-demo';
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('bookmark-video', {
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+      });
+    }
+    
+    function onPlayerReady(event) {
+      //document.getElementById('bookmark-video').style.borderColor = '#FF6D00';
+    }
+    function onPlayerStateChange(event){
+
+    }
+
+    function seekToTime(timeString) {
+        var timeComponents = timeString.split(':'); // split it at the colons
+        
+        var seconds = 0;
+        switch(timeComponents.length)
+        {
+            case 1: //ss
+                seconds = timeComponents[0];
+                break;
+            case 2: //mm:ss
+                seconds = (+timeComponents[0]) * 60 + (+timeComponents[1]);
+                break;
+            case 3: //hh:mm:ss
+                seconds = (+timeComponents[0]) * 60 * 60 + (+timeComponents[1]) * 60 + (+timeComponents[2]);
+                break;
+        }
+       
+        player.seekTo(seconds);
+    }
+  </script>

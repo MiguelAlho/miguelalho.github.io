@@ -2,38 +2,36 @@
 {{ partial "title.html" (dict "title" .Title) }}
 {{ end }}
 
-{{ define "main" }}
+{{ define "media" }}
 {{ if and ( and (isset .Page.Params "video") ( isset .Page.Params.Video "source" )) ( eq .Page.Params.Video.Source "youtube")  }}
   {{ partial "videoSection.html" (dict "link" .Page.Params.Video.Link) }}
 {{ end}}
 {{ if and ( and (isset .Page.Params "article") ( isset .Page.Params.Article "links" )) }}
   {{ partial "articleReferenceSection.html" (dict "links" .Page.Params.Article.Links) }}
 {{ end}}
+{{ end }}
 
+
+{{ define "main" }}
 <section>
   <div class="columns">
-  <div class="column is-one-fifth">
-    <!-- <span class="tag datetag">{{.Date.Format "2006-01-02"}}</span> -->
-  </div>
-  <div class="column">
-    <article class="message">
-      <div class="message-body">
-        {{ .Summary }}
-      </div>
-    </article>
-  </div>
-  <div class="column is-one-fifth">
-
+    <div class="column is-6 is-offset-3">
+      <article class="message">
+        <div class="message-body">
+          {{ .Summary }}
+        </div>
+      </article>
   </div>
 </div>
 </section>
     
-    {{ if isset .Page.Params "notes"  }}
+  {{ if isset .Page.Params "notes"  }}
 <section class="level notes-header">
   <div class="level-item has-text-centered">
     <h2>My notes & takeaways</h2>
   </div> 
 </section>
+
     {{ $.Scratch.Set "noteid" 0 }}
     {{ $.Scratch.Set "noteclass" 0 }}
 
@@ -51,19 +49,23 @@
       {{ end }}
 <section>
   <div class="columns">
-  <div class="column is-one-fifth" style="text-align-last: right;">
+  <div class="column is-2" style="text-align-last: right;">
     {{ if isset . "time" }}
-    <span class="tag datetag icon"><i class="fa fa-play"></i>&nbsp;&nbsp;{{ .time }}</span>
+      <button onclick="seekToTime('{{ .time }}')" class="button is-light is-link" >
+        <i class="fa fa-play"></i>&nbsp;&nbsp;{{ .time }}
+      </button>
     {{ end }}
     <span class="icon">
       <a href="#{{ $.Scratch.Get "noteid" }}"><i class="fa fa-link"></i></a>
     </span>
   </div>
-  <div class="column">
+  <div class="column is-8">
       <article class="message {{ $.Scratch.Get "noteclass" }}" id="{{ $.Scratch.Get "noteid" }}">
-        <!-- <div class="message-header">
-          <p>{{ .type }} </p>
-        </div> -->
+        {{ if .title }}
+        <div class="message-header">
+          <p>{{ .title }} </p>
+        </div>
+        {{ end }}
         <div class="message-body">
           {{ if .image }}
           <img src="/bookmarks/{{ .image }}" class=""/>
@@ -72,7 +74,7 @@
         </div>
       </article>
     </div>
-    <div class="column is-one-fifth">
+    <div class="column is-3">
       {{ if and ( isset . "comment" ) ( ne ( trim .comment  " ") "" ) }}
       <article class="message is-info is-small">
         <div class="message-body">

@@ -40,22 +40,26 @@ li {
 .quotenote{
     font-style: italic;
 }
-.quotenote .message-body::before{
+.quotenote .message-body::before, .message blockquote::before{
     font-family: FontAwesome;
     content: "\f10d"
 }
-.quotenote .message-body::after{
+.quotenote .message-body::after, .message blockquote::after{
     font-family: FontAwesome;
     content: "\f10e"
 }
 
-.fixed-video-content {
-    position: fixed;
-    top: 0;
-    bottom:0;
+#thing_to_stick {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    padding: 20px;
+}
 
-    width: 100vw; /* viewport width */
-    height: 100vh; /* viewport height */
-    overflow-y: scroll;
-    overflow-x: hidden;
+.articleRefLinks li {
+    list-style: none;
+}
+
+.articleRefLinks li i{
+    margin-right: 30px;
 }

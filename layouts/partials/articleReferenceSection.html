@@ -4,14 +4,14 @@
       
     </div>
     <div class="column">
-      <article class="message is-info is-medium">
+      <article class="message is-info ">
         <div class="message-header">
           External links for the notes
         </div>
         <div class="message-body">
-          <ul>
+          <ul class="articleRefLinks">
         {{ range .links }}
-          <li><a href="{{ . }}" target="_blank">{{ . }}</a></li>
+          <li><a href="{{ . }}" target="_blank"><i class="fa fa-external-link fa-lg"></i> {{ . }}</a></li>
         {{ end }}
         </ul>
       </div>

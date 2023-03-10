@@ -1,13 +1,7 @@
-<section>
-    <div class="columns">
-      <div class="column is-one-fifth">
-        
-      </div>
-      <div class="column">
-        {{ partial "youtubeembed.html" (dict "link" .link) }}
-      </div>
-      <div class="column is-one-fifth">
-        
-      </div>
+<section id="thing_to_stick" class="hero is-info">
+  <div class="columns">
+    <div class="column is-4 is-offset-4">
+      {{ partial "youtubeembed.html" (dict "link" .link) }}
     </div>
-  </section>
+  </div>
+</section>
