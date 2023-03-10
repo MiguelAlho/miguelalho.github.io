@@ -7,17 +7,20 @@ draft: true
 url: /bookmark-2023-03-09-Kafka-Consumer-Group-Rebalance/
 bookmark: article
 type: bookmarks
-author: 
-  name: Rob Golder
-  twitter: 
-  linkedin: 
-content:
+article:
   source: link
   id: 
-  link: https://www.linkedin.com/pulse/kafka-consumer-group-rebalance-1-2-rob-golder/
+  links: 
+    - https://www.linkedin.com/pulse/kafka-consumer-group-rebalance-1-2-rob-golder/
+    - https://www.linkedin.com/pulse/kafka-consumer-group-rebalance-2-rob-golder/
+  author: 
+    name: Rob Golder
+    twitter: 
+    linkedin: 
 tags:
   - bookmark
   - article
+  - Kafka
 
 summary:
     I've been debugging a weird and considered impossible situation on a Kafka cluster and/or consumer service. I have a multi-instance service where something occurs that causes one of the instances to get all the partitions assigned, though the partitions on the other instance do not get revoked. Theoretically, a partition can only be consumed by a single consumer in a group; in this case though, 2 consumers in the same group are consuming the same partition. This leads to concurrent processing on the same instance. Luckily, the consumers are idempotent, so they can still handle the situation, but it does generate a bunch of error events.
@@ -137,7 +140,7 @@ notes:
       > This feature could be utilized for example by tieing the Id of the Kubernetes pod that an application is running in to the application consumer’s group.instance.id. If the pod dies and restarts then the Group Coordinator will recognize the consumer as the group.instance.id will be the same, and the potentially costly rebalance is avoided.
 
       > For a consumer with static group membership it does not send a LeaveGroup request when it leaves a group (or indeed fails). Rather it stops heartbeating and remains in the group until the session.timeout.ms has been exceeded and is removed from the group by the Group Coordinator. 
-      
+
     comment: 
       can't see this as a problem in my current issue...
 

@@ -1,0 +1,24 @@
+<section>
+  <div class="columns">
+    <div class="column is-one-fifth">
+      
+    </div>
+    <div class="column">
+      <article class="message is-info is-medium">
+        <div class="message-header">
+          External links for the notes
+        </div>
+        <div class="message-body">
+          <ul>
+        {{ range .links }}
+          <li><a href="{{ . }}" target="_blank">{{ . }}</a></li>
+        {{ end }}
+        </ul>
+      </div>
+    </article>
+    </div>
+    <div class="column is-one-fifth">
+      
+    </div>
+  </div>
+</section>
