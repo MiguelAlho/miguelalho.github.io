@@ -1,51 +1,69 @@
 {{ define "hero" }}
-<section class="hero is-info"> 
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <p class="title">
-        {{ .Title }}
-      </p>
-      <p class="subtitle">
-        
-      </p>
-    </div>
-  </div>
-</section>
 {{ end }}
 
 {{ define "main" }}
-  <div class="columns">    
-    <div class="column is-one-fifth">
-      <div class="card>">
-        <div>
-          <figure class="image">
-            <img src="MiguelAlho-768x768.jpg" class="is-rounded"/>
-          </figure>
-        </div>  
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title is-4">Miguel Alho</p>
-              <p class="subtitle is-6">@MytyMyky</p>
-            </div>
-          </div>      
-          
-          <div class="content">
-            {{ .Description }}
+<div class="message is-info">
+  <div class="message-header">
+    About
+  </div>
+  <div class="message-body">
+
+    <div class="columns">    
+      <div class="column is-one-quarter">
+        <figure class="image">
+          <img src="MiguelAlho-768x768.jpg" class="is-rounded"/>
+        </figure>
+      </div>  
+      <div class="column">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">Miguel Alho</p>
+            <p class="subtitle is-6">@MytyMyky</p>
           </div>
+        </div>      
+        
+        <div class="content">
+          {{ .Description | markdownify }}
         </div>
       </div>
-
-
-      
-    </div>
-    <div class="column">
-      {{ .Content }}
-      
-    </div>
-
-    <div class="column is-one-fifth">
-
     </div>
   </div>
+</div>
+
+
+<div class="message is-info">
+  <div class="message-header">
+    Academic Info
+  </div>
+  <div class="message-body">
+    {{ .Page.Params.Info | markdownify }}
+  </div>
+</div>
+
+<div class="message is-info">
+  <div class="message-header">
+    Presentations
+  </div>
+  <div class="message-body">
+    {{ .Page.Params.Presentations | markdownify }}
+  </div>
+</div>
+
+<div class="message is-info">
+  <div class="message-header">
+    Professional experience
+  </div>
+  <div class="message-body">
+    <ul>
+    {{ range .Page.Params.Timeline}}
+      <li><b>{{ .period }}</b> - <b>{{ .title }}</b> - <b>{{ .company }}</b><br />
+        {{ if .description }}
+        {{ .description | markdownify }}
+        {{ end }}
+      </li>
+    {{ end }}
+    </ul>
+  </div>
+</div>
+
 {{ end }}
