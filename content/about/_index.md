@@ -15,12 +15,17 @@ description: >
   I also help organize the DevOps Aveiro meetups and DevOpsDays Portugal conference.
 
 
-info: > 
-  * Electronics and Telecomunications Engineer gradute, at Universidade de Aveiro (1999-2004); Majored in Multimedia; developed course project in Information Systems
-  
-  * Trainer Certification (Formação Inicial Pedagógica de Formadores) – SEMA 2011; 
-    * CAP – Certificate Nº 570520/2011 DC, valid since 23/05/2011
+info:
+  - period: 1999 - 2004
+    title: Electronics and Telecomunications Engineering
+    company: Universidade de Aveiro
+    description: 
 
+  - period: 2011
+    title: Formação Inicial Pedagógica de Formadores
+    company: SEMA
+    description: CAP – Certificate Nº 570520/2011 DC
+    
 
 presentations: >
   * Speaker at inaugural DevOps Aveiro meetup (Mar 2020) with talk on "4 key metrics".
@@ -133,5 +138,3 @@ timeline:
       * Digital process management app for Provedoria da Justiça
 
 ---
-
-sdfsdfcdf

@@ -36,16 +36,15 @@
     Academic Info
   </div>
   <div class="message-body">
-    {{ .Page.Params.Info | markdownify }}
-  </div>
-</div>
-
-<div class="message is-info">
-  <div class="message-header">
-    Presentations
-  </div>
-  <div class="message-body">
-    {{ .Page.Params.Presentations | markdownify }}
+    <ul>
+      {{ range .Page.Params.Info}}
+        <li><b>{{ .period }}</b> - <b>{{ .title }}</b> - <b>{{ .company }}</b><br />
+          {{ if .description }}
+          {{ .description | markdownify }}
+          {{ end }}
+        </li>
+      {{ end }}
+      </ul>
   </div>
 </div>
 
@@ -63,6 +62,16 @@
       </li>
     {{ end }}
     </ul>
+  </div>
+</div>
+
+
+<div class="message is-info">
+  <div class="message-header">
+    Presentations
+  </div>
+  <div class="message-body">
+    {{ .Page.Params.Presentations | markdownify }}
   </div>
 </div>
 
