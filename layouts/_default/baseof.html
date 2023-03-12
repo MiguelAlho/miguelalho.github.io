@@ -11,9 +11,11 @@
   <body>
     {{ block "header" . }}{{ partial "header.html" .}}{{ end }}
     {{ block "hero" . }}{{ end }}
-    {{ block "media" . }}{{ end }}      
-    <div class="container content">        
-        {{ block "main" . }}{{ end }}        
+    {{ block "media" . }}{{ end }}   
+    <section class="section">   
+      <div class="container content">        
+        {{ block "main" . }}{{ end }}
+      </div>        
     </section>
     {{ block "footer" . }}{{ partial "footer.html" .}}{{ end }}
   </body>
