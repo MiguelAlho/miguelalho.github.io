@@ -64,3 +64,11 @@ even in the build process
 * clients - SDKs, Restsharp, 
 * Data access - ORMs (Entity Framework, Dapper, Nest)
 
+
+# essential vs additional
+
+Looking a the above, one can wonder what's REALLY needed - and what is an enhancement that may or may not produce value. 
+
+How much do you really need / how much is YAGNI?
+how much extra effort or boilerplate is required, vs drop in and use?
+HOw much time do you spend solving the edge-cases in the external tools vs the actually business component
