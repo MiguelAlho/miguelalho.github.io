@@ -1,14 +1,18 @@
 ---
 title: 'A Decade of DDD, CQRS, Event Sourcing (Greg Young)'
 author: Miguel Alho
-type: post
 date: 2016-04-12T11:42:10+00:00
 url: /a-decade-of-ddd-cqrs-event-sourcing-greg-young/
-bookmark: talk
-type: bookmarks
+
 video:
   source: youtube
+  id: LDW0QWie21s
   link: https://www.youtube.com/embed/LDW0QWie21s
+  author:
+    name: Greg Young
+  context:
+    event: DDD Europe
+    
 tags:
   - bookmark
   - talk

@@ -2,11 +2,9 @@
 title: "Kafka Consumer Group Rebalance (Prt 1 and 2)"
 date: 2023-03-09T17:15:00Z
 author: Miguel Alho
-type: post
-
-url: /bookmark-2023-03-09-Kafka-Consumer-Group-Rebalance/
-bookmark: article
 type: bookmarks
+url: /bookmark-2023-03-09-Kafka-Consumer-Group-Rebalance/
+
 article:
   links: 
     - https://www.linkedin.com/pulse/kafka-consumer-group-rebalance-1-2-rob-golder/

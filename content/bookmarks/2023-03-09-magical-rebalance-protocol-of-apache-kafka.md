@@ -2,14 +2,8 @@
 title: "The Magical Rebalance Protocol of Apache Kafka"
 date: 2023-03-08T22:46:05Z
 author: Miguel Alho
-type: post
 url: /bookmark-magical-rebalance-protocol-of-apache-kafka/
-bookmark: talk
-type: bookmarks
-author: 
-  name: Gwen Shapira
-  twitter: 
-  linkedin: 
+
 video:
   source: youtube
   id: MmLezWRI3Ys
@@ -19,6 +13,11 @@ video:
     name: strangeloop
     date: 2018-09-27
     link: https://www.thestrangeloop.com/2018/sessions.html
+  author: 
+    name: Gwen Shapira
+    twitter: 
+    linkedin:
+
 tags:
   - bookmark
   - talk
