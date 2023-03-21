@@ -2,11 +2,8 @@
 title: "Kafka Consumer Group Rebalance (Prt 1 and 2)"
 date: 2023-03-09T17:15:00Z
 author: Miguel Alho
-type: post
-
 url: /bookmark-2023-03-09-Kafka-Consumer-Group-Rebalance/
-bookmark: article
-type: bookmarks
+
 article:
   links: 
     - https://www.linkedin.com/pulse/kafka-consumer-group-rebalance-1-2-rob-golder/
@@ -70,7 +67,7 @@ notes:
 
   - type: slide
     image: kafka-rebalance/006.png
-    content: "
+    content: >
       > The heartbeat thread checks the status of the consumer processing, and if the max.poll.interval.ms has been exceeded between polls then rather than a heartbeat it sends a LeaveGroup request.   The Group Coordinator removes the consumer from the consumer group triggering a rebalance.
 
 
@@ -81,12 +78,11 @@ notes:
 
 
       >The max.poll.interval.ms is essentially the main health check for the consumer processing.  However by also utilizing a heartbeat check on a separate thread it means that hard failures where the whole application has failed are detected more quickly.
-    "
-
+    
   - type: slide
     image: kafka-rebalance/007.png
     title: Eager Rebalance
-    content: 
+    content: >
       With eager rebalancing (the default), when a consumer group rebalances, all processing by the consumers stops while the topic partitions are reassigned.~
 
 
@@ -95,7 +91,7 @@ notes:
   - type: slide
     image: kafka-rebalance/008.png
     title: Incremental (Cooperative) Rebalance
-    content: "
+    content: >
       > If the impact of eager consumer group rebalances stopping message processing while they are occurring is considered too great, then an Incremental Rebalance strategy could be adopted. Existing consumers that have been notified by the Group Coordinator that a rebalance is underway do not stop processing. Instead rebalancing occurs over two phases. 
 
 
@@ -106,14 +102,14 @@ notes:
 
 
       > Incremental Rebalance is configured by applying a CooperativeStickyAssignor to the consumer’s partition.assignment.strategy setting.
-    "
+    
     comment: 
       CooperativeStickyAssignor is at play in my case. I can see revocations sometimes. But in the case of the error, the revoke messages are missing.
 
   - type: slide
     image: kafka-rebalance/009.png
     title: Static Group Membership
-    content: "
+    content: >
       > With the default rebalance protocol when a consumer starts it is assigned a new member.id (which is an internal Id in the Group Coordinator) irrespective of whether it is an existing consumer that has just restarted. Any consumer starting triggers a rebalance, and is assigned a new member.id. With this protocol the consumer cannot be re-identified as the same.
 
 
@@ -128,18 +124,18 @@ notes:
       > This feature could be utilized for example by tieing the Id of the Kubernetes pod that an application is running in to the application consumer’s group.instance.id. If the pod dies and restarts then the Group Coordinator will recognize the consumer as the group.instance.id will be the same, and the potentially costly rebalance is avoided.
 
       > For a consumer with static group membership it does not send a LeaveGroup request when it leaves a group (or indeed fails). Rather it stops heartbeating and remains in the group until the session.timeout.ms has been exceeded and is removed from the group by the Group Coordinator. 
-    "
+    
     comment: 
       can't see this as a problem in my current issue...
 
   - type: slide
     title: On Rebalance Risks
-    content: "      
+    content: >      
       * __Duplicate messages__ - A consumer that has exceeded its time out and is considered failed could still be processing the messages it has polled, and that processing could complete successfully. However its consumer offsets write will be rejected as the consumer group rebalance increments the generation Id, and any writes with the previous generation Id are rejected. Meanwhile a new consumer instance is assigned the topic partitions in a rebalance and this consumes and processes the same messages. It is always important to be aware that the application may receive duplicate messages and it must cater for these, if necessary, as required. 
       
 
       * __Rebalance Storms__ - Rebalance does not complete until all existing consumers have either rejoined or exceeded the max.poll.interval.ms. If a consumer does indeed exceed the max.poll.interval.ms before it again polls as it is taking longer than expected to process its last batch of messages then when it does complete it will request to rejoin the group, triggering another rebalance. If the cause of the rebalance is for example due to slow responding downstream services that are affecting all consumers the upshot can be rebalance after rebalance being triggered as consumers are continually evicted and then rejoin, a ‘rebalance storm’. Static Group Membership and Incremental rebalancing can of course assist with this but whatever strategies are in place care must be taken with the rebalance configurations.
-    "
+    
     comment: 
       Could use of `autocommit` reflect in the duplicate message processing? Even though one of the consumers is considered failed, it can still process messages it has polled. This doesn't explain how it keeps getting messages long after. Fortunately, consumer is idempotent and can handle this.
 ---

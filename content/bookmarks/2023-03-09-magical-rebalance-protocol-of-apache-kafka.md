@@ -2,23 +2,20 @@
 title: "The Magical Rebalance Protocol of Apache Kafka"
 date: 2023-03-08T22:46:05Z
 author: Miguel Alho
-type: post
 url: /bookmark-magical-rebalance-protocol-of-apache-kafka/
-bookmark: talk
-type: bookmarks
-author: 
-  name: Gwen Shapira
-  twitter: 
-  linkedin: 
+
 video:
   source: youtube
   id: MmLezWRI3Ys
   link: https://www.youtube.com/embed/MmLezWRI3Ys
+  author: 
+    name: Gwen Shapira
+    twitter: ''
+    linkedin: ''
   context:
-    event: conference
-    name: strangeloop
-    date: 2018-09-27
+    name: StrangeLoop
     link: https://www.thestrangeloop.com/2018/sessions.html
+
 tags:
   - bookmark
   - talk
@@ -69,8 +66,8 @@ notes:
   - type: slide
     time: 13:53
     image: magical/003.png
-    content: 
-        The protocol is layered, and used in 4 cases - 
+    content: >
+        The protocol is layered, and used in 4 cases 
 
         * consumer groups membership and partition assignment (base use case)
 
@@ -83,7 +80,7 @@ notes:
   - type: slide
     time: 15:32
     image: magical/004.png
-    content: 
+    content: >
         For the consumer group use case, Consumers want to know which partitions they can consume.
         
 

@@ -1,13 +1,12 @@
 ---
 title: 'A Decade of DDD, CQRS, Event Sourcing (Greg Young)'
 author: Miguel Alho
-type: post
 date: 2016-04-12T11:42:10+00:00
 url: /a-decade-of-ddd-cqrs-event-sourcing-greg-young/
-bookmark: talk
-type: bookmarks
+
 video:
   source: youtube
+  id: LDW0QWie21s
   link: https://www.youtube.com/embed/LDW0QWie21s
 tags:
   - bookmark
@@ -31,7 +30,6 @@ notes:
 
   - type: quote
     time: 10:43
-    image: slide1.jpg
     content: 
         But something else has been happening that is really cool... ()...) they've gone through in many domains and actually had breakthroughs in their domains.  
     comment: 
@@ -53,7 +51,6 @@ notes:
 
   - type: quote
     time: 12:45
-    image: slide1.jpg
     content: 
         (modeling events) ... Domain experts coming from a legacy system tend to think in terms of their legacy system as opposed to thinking about their domain problem. Once you start modeling events, it forces you to think about a behavioral version of that system as opposed to a structural version of that system and what the data that it stores is.in that system represents.  
         
