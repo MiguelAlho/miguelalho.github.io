@@ -4,6 +4,7 @@ date: 2023-03-09T17:15:00Z
 author: Miguel Alho
 url: /bookmark-2023-03-09-Kafka-Consumer-Group-Rebalance/
 
+
 article:
   links: 
     - https://www.linkedin.com/pulse/kafka-consumer-group-rebalance-1-2-rob-golder/

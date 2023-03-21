@@ -4,6 +4,7 @@ date: 2023-03-08T22:46:05Z
 author: Miguel Alho
 url: /bookmark-magical-rebalance-protocol-of-apache-kafka/
 
+
 video:
   source: youtube
   id: MmLezWRI3Ys
@@ -15,7 +16,6 @@ video:
   context:
     name: StrangeLoop
     link: https://www.thestrangeloop.com/2018/sessions.html
-
 tags:
   - bookmark
   - talk

@@ -8,6 +8,11 @@ video:
   source: youtube
   id: LDW0QWie21s
   link: https://www.youtube.com/embed/LDW0QWie21s
+  author:
+    name: Greg Young
+  context:
+    event: DDD Europe
+    
 tags:
   - bookmark
   - talk
