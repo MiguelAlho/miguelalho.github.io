@@ -3,7 +3,7 @@ title: "The Magical Rebalance Protocol of Apache Kafka"
 date: 2023-03-08T22:46:05Z
 author: Miguel Alho
 url: /bookmark-magical-rebalance-protocol-of-apache-kafka/
-
+imageFolderId: magical
 
 video:
   source: youtube

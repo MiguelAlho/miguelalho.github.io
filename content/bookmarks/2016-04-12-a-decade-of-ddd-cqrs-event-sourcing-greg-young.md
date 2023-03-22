@@ -3,6 +3,7 @@ title: 'A Decade of DDD, CQRS, Event Sourcing (Greg Young)'
 author: Miguel Alho
 date: 2016-04-12T11:42:10+00:00
 url: /a-decade-of-ddd-cqrs-event-sourcing-greg-young/
+imageFolderId: decade-of-ddd
 
 video:
   source: youtube
@@ -24,7 +25,7 @@ summary:
 notes:
   - type: note
     time: 05:50
-    content: 
+    content: >
         Getting people onto CQRS / Event Sourcing can be hard based on people's experience and past knowledge. If all they've known is ORMs on a relation database, the leap to thinking in events can be hard. Same as the jump to functional for anyone who's only done OOP.  
 
 
@@ -69,7 +70,7 @@ notes:
 
   - type: note
     time: 18:00
-    content: 
+    content: >
         We're seeing the rise of Event sourcing at the same time as the rise of other ideas, somewhat in tandem, as there are aspects of each that are interrelated
         
         * functional programming (has all the functions needed for pattern matching and left folds, natively)
@@ -99,7 +100,7 @@ notes:
       There's no such thing as a one-way command
     
   - type: note
-    content: 
+    content: >
       Some of the pitfalls many people fall into or bad things that have happened
 
 
@@ -126,7 +127,7 @@ notes:
       * Lack of process managers - systems are much harder understand when you have to look at all the systems to see how they are connected
 
   - type: note
-    content: 
+    content: >
       Future focus -
 
 

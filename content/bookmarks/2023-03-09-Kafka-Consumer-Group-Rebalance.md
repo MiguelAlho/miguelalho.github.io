@@ -3,7 +3,7 @@ title: "Kafka Consumer Group Rebalance (Prt 1 and 2)"
 date: 2023-03-09T17:15:00Z
 author: Miguel Alho
 url: /bookmark-2023-03-09-Kafka-Consumer-Group-Rebalance/
-
+imageFolderId: kafka-rebalance
 
 article:
   links: 
@@ -34,7 +34,7 @@ notes:
   - type: slide
     image: kafka-rebalance/001.png
     title: An example is given
-    content: "
+    content: >
       > If a service has multiple consumers that subscribe to mutually exclusive topics but that share the same group.id then any rebalance triggered by any one consumer would still affect the other consumers in the group
 
 
