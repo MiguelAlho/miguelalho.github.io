@@ -38,13 +38,13 @@
     {{ range .Page.Params.Notes  }}
       {{ $.Scratch.Set "noteid" (add ($.Scratch.Get "noteid") 1) }}
       
-      {{ if eq .type "note" }}
+      {{ if eq ( .type | lower ) "note" }}
         {{ $.Scratch.Set "noteclass" "is-info" }}
-      {{ else if eq .type "slide" }}
+      {{ else if eq ( .type | lower ) "slide" }}
         {{ $.Scratch.Set "noteclass" "is-info" }}
-      {{ else if eq .type "quote" }}
+      {{ else if eq ( .type | lower ) "quote" }}
         {{ $.Scratch.Set "noteclass" "is-dark quotenote" }}
-      {{ else if eq .type "comment" }}
+      {{ else if eq ( .type | lower ) "comment" }}
         {{ $.Scratch.Set "noteclass" "is-primary" }}
       {{ end }}
 <section>
