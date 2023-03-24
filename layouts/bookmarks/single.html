@@ -6,7 +6,7 @@
 {{ if and ( and (isset .Page.Params "video") ( isset .Page.Params.Video "source" )) ( eq .Page.Params.Video.Source "youtube")  }}
   {{ partial "videoSection.html" (dict "link" .Page.Params.Video.Link) }}
 {{ end}}
-{{ if and ( and (isset .Page.Params "article") ( isset .Page.Params.Article "links" )) }}
+{{ if and ( and ( and (isset .Page.Params "article") ( isset .Page.Params.Article "links" )) ( gt ( len .Page.Params.Article.Links ) 0 )) }}
   {{ partial "articleReferenceSection.html" (dict "links" .Page.Params.Article.Links) }}
 {{ end}}
 {{ end }}
