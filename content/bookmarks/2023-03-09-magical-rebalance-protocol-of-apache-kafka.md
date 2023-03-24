@@ -1,8 +1,8 @@
 ---
 title: The Magical Rebalance Protocol of Apache Kafka
-date: 2023-03-08T22:46:05.0000000Z
+date: 2023-03-24T12:08:43.9806268Z
 author: Miguel Alho
-draft: true
+draft: false
 url: /bookmark-magical-rebalance-protocol-of-apache-kafka/
 imageFolderId: magical
 tags:
@@ -174,6 +174,4 @@ notes:
 
     * If rebalance does not stop every consumer, can this also be one of the reasons the issue occurs?
   comment: ''
-
-
 ---
