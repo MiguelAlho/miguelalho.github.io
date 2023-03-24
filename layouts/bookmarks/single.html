@@ -28,7 +28,7 @@
   {{ if isset .Page.Params "notes"  }}
 <section class="level notes-header">
   <div class="level-item has-text-centered">
-    <h2>My notes & takeaways</h2>
+    <h2>My notes & takeaways ({{ len .Page.Params.Notes }})</h2>
   </div> 
 </section>
 
@@ -78,7 +78,7 @@
       {{ if and ( isset . "comment" ) ( ne ( trim .comment  " ") "" ) }}
       <article class="message is-info is-small">
         <div class="message-body">
-          {{ .comment }}
+          {{ .comment | markdownify}}
         </div>
       </article>
       {{ end }}

@@ -1,5 +1,5 @@
 ---
-title: Introduction to Context Mapping - Michael Plöd - DDD Europe 2022
+title: Introduction to Context Mapping
 date: 2023-03-24T15:56:04.0544277Z
 author: Miguel Alho
 draft: false
@@ -12,7 +12,7 @@ video:
   id: k5i4sP9q2Lk
   link: https://www.youtube.com/embed/k5i4sP9q2Lk
   author:
-    name: Michael Plod
+    name: Michael Plöd
     twitter: bitboss
     linkedIn: ''
   context:
@@ -34,7 +34,7 @@ notes:
   image: intro-context-mapping/1088838246357532672.png
   title: ''
   content: The ddd-crew github repo has a lot of tools, like the DDD starter Modelling Process to get you started
-  comment: '[github link](https://github.com/ddd-crew/ddd-starter-modelling-process)'
+  comment: '[DDD-crew GitHub repo mentioned](https://github.com/ddd-crew/ddd-starter-modelling-process)'
 - id: 2
   type: Quote
   time: 4:28
@@ -97,18 +97,18 @@ notes:
   type: Slide
   time: 19:10
   image: intro-context-mapping/1088843287634116608.png
-  title: ''
-  content: There are 9 patterns.
+  title: 'The 9 patterns'
+  content: ''
   comment: ''
 - id: 10
-  type: Quote
+  type: Slide
   time: 19:45
   image: intro-context-mapping/1088843451019034624.png
-  title: Open-host Service
+  title: Open-host Service (OHS)
   content: One API for several consumers. API provider (Open host provider) is generally Upstream. Rare cases where the Open-host service (power control) is downstream is in regulator related scenarios.
   comment: ''
 - id: 11
-  type: Quote
+  type: Slide
   time: 22:15
   image: intro-context-mapping/1088844323962748928.png
   title: Anti-Corruption Layer (ACL)
@@ -136,7 +136,7 @@ notes:
     Conformist is deep coupling
   comment: ''
 - id: 14
-  type: Quote
+  type: Slide
   time: 27:00
   image: intro-context-mapping/1088845342260068352.png
   title: ''
@@ -146,7 +146,7 @@ notes:
   type: Slide
   time: 31:00
   image: intro-context-mapping/1088846309927944192.png
-  title: Shared Kernel
+  title: Shared Kernel (SK)
   content: >-
     Shared Kernel physically shares an artifact. JARs, DLLs, DBs. It's considered an Anti-Pattern.
 
@@ -164,28 +164,28 @@ notes:
   type: Slide
   time: 34:35
   image: intro-context-mapping/1088847237653463040.png
-  title: Partnership
+  title: Partnership (PNR)
   content: Needed for shared kernels - establishes cooperative relationships.
   comment: ''
 - id: 18
   type: Slide
   time: 37:30
   image: intro-context-mapping/1088847903998345216.png
-  title: Customer - Supplier
+  title: Customer - Supplier (CUST - SUP)
   content: "Upstream - downstream relationship. Customer (downstream team) has **some** influence granted on the Supplier (upstream team) planning. \n\nIt's organizational - doesn't show up in code. "
   comment: ''
 - id: 19
   type: Slide
   time: 44:00
   image: intro-context-mapping/1088849564695265280.png
-  title: Seperate Ways
+  title: Seperate Ways (SW)
   content: It's a Free-style relationship. Very expensive.
   comment: ''
 - id: 20
   type: Slide
   time: 45:35
   image: intro-context-mapping/1088849969093279744.png
-  title: Published Language
+  title: Published Language (PL)
   content: >-
     Standardized language in most cases. Creates independence between teams. Often combined with OHS.
 
@@ -214,7 +214,7 @@ notes:
   content: Describes communication patterns too
   comment: ''
 - id: 24
-  type: Quote
+  type: Slide
   time: 54:40
   image: intro-context-mapping/1088852243328794624.png
   title: ''
