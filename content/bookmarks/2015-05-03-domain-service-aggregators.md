@@ -1,7 +1,7 @@
 ---
 title: 'TDomain Service Aggregators'
 author: Miguel Alho
-type: post
+draft: true
 date: 2015-05-03T14:44:01+00:00
 url: /domain-service-aggregators/
 bookmark: talk

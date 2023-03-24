@@ -1,7 +1,7 @@
 ---
 title: 'Anti-fragile and feedback (Andy Hunt)'
 author: Miguel Alho
-type: post
+draft: true
 date: 2015-08-24T15:02:49+00:00
 url: /anti-fragile-and-feedback-andy-hunt/
 bookmark: talk

@@ -1,7 +1,7 @@
 ---
 title: 'The Old New Old New Things'
 author: Miguel Alho
-type: post
+draft: true
 date: 2015-03-04T18:20:41+00:00
 url: /the-old-new-old-new-things/
 bookmark: talk

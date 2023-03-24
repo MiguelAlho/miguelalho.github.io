@@ -1,7 +1,7 @@
 ---
 title: 'Pacts to the Rescue (Beth Skurrie)'
 author: Miguel Alho
-type: post
+draft: true
 date: 2016-01-11T19:05:46+00:00
 url: /pacts-to-the-resque-beth-skurrie/
 bookmark: talk

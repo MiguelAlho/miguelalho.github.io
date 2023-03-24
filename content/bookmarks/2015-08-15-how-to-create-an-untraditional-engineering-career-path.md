@@ -1,7 +1,7 @@
 ---
 title: 'How to Create an Untraditional Engineering Career Path'
 author: Miguel Alho
-type: post
+draft: true
 date: 2015-08-15T11:01:54+00:00
 url: /how-to-create-an-untraditional-engineering-career-path/
 bookmark: talk
